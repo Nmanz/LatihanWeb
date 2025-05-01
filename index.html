@@ -2,14 +2,20 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Latihan XAMPP</title>
+  <title>Ubah Teks Interaktif</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Halo dari XAMPP!</h1>
-  <button onclick="ubahTeks()">Klik Saya</button>
-  <p id="pesan">Ini teks awal.</p>
+  <div class="container">
+    <h1>Selamat Datang di Latihan Web!</h1>
+    <p>Masukkan nama kamu, lalu klik tombol untuk menampilkan ucapan.</p>
+
+    <input type="text" id="inputNama" placeholder="Contoh: Andi">
+    <button onclick="tampilkanNama()">Tampilkan</button>
+
+    <p id="output" class="hasil"></p>
+  </div>
 
   <script src="script.js"></script>
 </body>
